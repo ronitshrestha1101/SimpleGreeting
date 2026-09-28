@@ -12,15 +12,65 @@ body {
   color: #2e2a25;
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
+}
+
+/* Header and navigation bar */
+.site-header {
+  width: 100%;
+  padding: 24px 20px;
+}
+
+.navbar {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  padding: 24px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.site-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #24201c;
+  text-decoration: none;
+}
+
+.site-title:hover {
+  color: #a0563b;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 0.95rem;
+  color: #5c554e;
+}
+
+.nav-links a:hover {
+  color: #24201c;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 /* Greeting section container */
 .greeting {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   max-width: 480px;
   width: 100%;
+  margin: 0 auto;
+  padding: 24px 20px 48px;
   text-align: center;
 }
 
